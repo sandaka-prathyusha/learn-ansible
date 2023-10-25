@@ -3,9 +3,8 @@
   #This is play level variables , map
   vars:
     cource: devops
-    trainer: nandu
+    trainer: siva
     duration: 100hrs
-
 
   tasks:
     - name: printing variables
