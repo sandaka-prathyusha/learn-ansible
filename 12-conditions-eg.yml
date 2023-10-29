@@ -3,7 +3,7 @@
   tasks:
   - name: check directory is exist or not
     ansible.builtin.stat:
-      path: /tmp
+      path: /tmp/nandu
     register: dir_to_check
 
 
