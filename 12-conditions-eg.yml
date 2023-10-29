@@ -4,7 +4,7 @@
   - name: check directory is exist or not
     ansible.builtin.stat:
       path: /tmp
-      register: dir_to_check
+    register: dir_to_check
 
 
   - name: directory found
