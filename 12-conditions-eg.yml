@@ -3,12 +3,12 @@
   tasks:
   - name: check directory is exist or not
     ansible.builtin.stat:
-      path: /tmp/nandu
-      register: st
+      path: /tmp
+      register: dir_to_check
       ignore_errors: true
 
-  - name: print command output
+  - name: directory found
     ansible.builtin.debug:
-      msg: output is {{st}}
-
+      msg: "directory /tmp is present"
+    when: dir_to_check.stat.isdir
 
