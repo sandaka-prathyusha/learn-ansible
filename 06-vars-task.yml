@@ -6,4 +6,4 @@
   tasks:
     - name: printing variable from play
       ansible.builtin.debug:
-        msg:"money is {{money}} , houses are {{houses}}"
+        msg: "money is {{money}} , houses are {{houses}}"
