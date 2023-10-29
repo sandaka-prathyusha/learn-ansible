@@ -1,0 +1,10 @@
+- name: demo on conditions example
+  hosts: localhost
+  tasks:
+  - name: check directory is exist or not
+    ansible.builtin.stat:
+      path: /tmp/nandu
+      register: output
+      ignore_errors: true
+
+

@@ -17,4 +17,4 @@
     ansible.builtin.user:
      name: roboshop
     when: output.rc != 0
-#     when output.rc not equal to zero then it means user does not exist then it will run
+#     when output.rc not equal to zero  then it means user does not exist then it will run
