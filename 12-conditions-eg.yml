@@ -10,5 +10,5 @@
   - name: directory found
     ansible.builtin.debug:
       msg: "directory /tmp is present"
-    when: dir_to_check.stat.isdir
+    when: dir_to_check.stat.isdir is defined and dir_to_check.stat.isdir
 
