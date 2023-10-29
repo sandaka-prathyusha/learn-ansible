@@ -1,0 +1,10 @@
+- name: create user
+  hosts: localhost
+  tasks:
+  - name: create roboshop user
+    ansible.builtin.shell: id roboshop
+    register: output
+
+  - name: print command output
+    ansible.builtin.debug:
+      msg: output is {{output}}
