@@ -1,0 +1,35 @@
+- name: Demo on Ansible Datatypes
+  hosts: localhost
+  vars:
+  - AGE: 30
+  - NAME: "NANDU"
+  - Is DevOps: true
+  - SKILLS: #list
+    - devops
+    - aws
+    - docker
+  - EXPERIENCE: #map
+      devops: 3
+      aws: 4
+      docker: 2
+  tasks:
+  - name: print number datatype
+    ansible.builtin.debug:
+      msg: "{{AGE}}"
+
+  - name: print string datatype
+    ansible.builtin.debug:
+      msg: "{{NAME}}"
+
+  - name: print BOOLEAN datatype
+    ansible.builtin.debug:
+      msg: "{{Is DevOps}}"
+
+
+  - name: print LIST datatype
+    ansible.builtin.debug:
+      msg: "{{SKILLS}}"
+
+  - name: print MAP datatype
+    ansible.builtin.debug:
+      msg: "{{EXPERIENCE}}"
