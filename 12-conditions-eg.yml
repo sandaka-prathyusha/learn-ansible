@@ -4,7 +4,7 @@
   - name: check directory is exist or not
     ansible.builtin.stat:
       path: /tmp/nandu
-      register: output
+      register: st
       ignore_errors: true
 
 
