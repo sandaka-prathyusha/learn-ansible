@@ -4,6 +4,7 @@
   - name: create roboshop user
     ansible.builtin.shell: id roboshop
     register: output
+    ignore_errors: true
 
   - name: print command output
     ansible.builtin.debug:
