@@ -11,7 +11,7 @@
 
     - name: printing variable from task and override
       vars:
-        money: 30000 rupees
-        land: 3 achers
+        money: "30000 rupees"
+        land: "3 achers"
       ansible.builtin.debug:
         msg: "money is {{money}} , land is {{land}} "
