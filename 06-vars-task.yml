@@ -1,8 +1,8 @@
 - name: Demo on vars at task level
   hosts: localhost
   vars:
-    money=20000
-    houses=2
+    money= 20000
+    houses= 2
   tasks:
     - name: printing variable from play
       ansible.builtin.debug:
