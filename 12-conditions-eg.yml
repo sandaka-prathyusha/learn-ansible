@@ -7,4 +7,8 @@
       register: st
       ignore_errors: true
 
+  - name: print command output
+    ansible.builtin.debug:
+      msg: output is {{st}}
+
 
