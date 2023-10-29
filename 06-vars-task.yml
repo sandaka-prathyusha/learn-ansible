@@ -1,5 +1,6 @@
 - name: Demo on vars at task level
   hosts: localhost
+#  these are parent or play level variables
   vars:
     money: 20000
     houses: 2
@@ -10,7 +11,7 @@
 
     - name: printing variable from task and override
       vars:
-        money: 30000
+        money: 30000 rupees
         land: 3 achers
       ansible.builtin.debug:
         msg: "money is {{money}} , land is {{land}} "
