@@ -1,0 +1,6 @@
+- name: Demo on vars in inventory
+  hosts: test
+  tasks:
+    - name: print test username
+      ansible.builtin.debug:
+        msg: "username is {{test_username}}"
