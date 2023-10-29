@@ -5,7 +5,7 @@
     ansible.builtin.stat:
       path: /tmp
       register: dir_to_check
-      ignore_errors: true
+
 
   - name: directory found
     ansible.builtin.debug:
