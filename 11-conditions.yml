@@ -11,4 +11,4 @@
       msg: output is {{output}}
   - name: print exit status
     ansible.builtin.debug:
-      msg:  {{output.rc}}
+      msg:  "{{output.rc}}"
