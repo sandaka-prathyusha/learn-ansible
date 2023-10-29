@@ -12,3 +12,8 @@
       msg: "directory /tmp is present"
     when: dir_to_check.stat.isdir is defined and dir_to_check.stat.isdir
 
+  - name: Create a directory if it does not exist
+    ansible.builtin.file:
+      path: /tmp/nandu
+      state: directory
+    when: dir_to_check.stat.isdir is failed
