@@ -3,7 +3,7 @@
   vars:
   - AGE: 30
   - NAME: "NANDU"
-  - Is DevOps: true
+  - IsDevOps: true
   - SKILLS: #list
     - devops
     - aws
@@ -23,7 +23,7 @@
 
   - name: print BOOLEAN datatype
     ansible.builtin.debug:
-      msg: "{{Is DevOps}}"
+      msg: "{{IsDevOps}}"
 
 
   - name: print LIST datatype
