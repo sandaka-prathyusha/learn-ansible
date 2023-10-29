@@ -16,4 +16,4 @@
     ansible.builtin.file:
       path: /tmp/nandu
       state: directory
-    when: dir_to_check.stat.isdir is failed
+    when: not dir_to_check.stat.exists
