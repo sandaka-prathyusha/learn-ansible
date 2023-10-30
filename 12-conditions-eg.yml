@@ -7,7 +7,7 @@
     register: dir_to_check
 
 
-  - name: directory found
+  - name: directory found # to check  directory is present or not if not it will skip there itself
     ansible.builtin.debug:
       msg: "directory /tmp is present"
     when: dir_to_check.stat.isdir is defined and dir_to_check.stat.isdir
