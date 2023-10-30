@@ -7,6 +7,6 @@
       name: "{{item.name}}"
       state: "{{item.state}}"
     loop: #list of map
-    - {name: 'nginx', state: 'absent'}
+    - {name: 'nginx', state: 'installed'}
     - {name: 'postfix', state: 'installed'}
 
