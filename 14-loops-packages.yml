@@ -1,0 +1,12 @@
+- name: Demo on install packages
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: installing packages
+      ansible.builtin.yum:
+        name: "{{item}}"
+        state: installed
+      loop:
+        - nginx
+        - postmap
+        - mailx
